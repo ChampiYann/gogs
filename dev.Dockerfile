@@ -7,8 +7,6 @@ RUN apt install -y make git-all nodejs
 RUN npm install -g less
 RUN go install github.com/go-task/task/v3/cmd/task@latest
 
-RUN useradd -m git
-USER git
 RUN mkdir /go/gogs
 RUN mkdir /go/gogs-repositories
 
